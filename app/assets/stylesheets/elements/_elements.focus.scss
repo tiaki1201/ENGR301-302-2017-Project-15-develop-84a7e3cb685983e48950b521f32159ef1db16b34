@@ -1,0 +1,12 @@
+*:active,
+*:focus {
+    outline: none;
+}
+
+::selection {
+    background: $color-select; // WebKit/Blink Browsers
+}
+
+::-moz-selection {
+    background: $color-select; // Gecko Browsers
+}

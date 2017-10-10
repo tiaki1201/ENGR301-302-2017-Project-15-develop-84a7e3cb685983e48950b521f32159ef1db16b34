@@ -1,0 +1,97 @@
+form {
+  @include placeholder {
+    color: $color-black-a50;
+    font-weight: 400;
+  }
+}
+
+textarea {
+  color: $color-black-a50;
+  font-weight: 400;
+}
+
+input, select, textarea {
+  //margin: 40px auto 40px auto;
+  //padding: 10px 20px;
+  margin: 0 auto;
+  resize: none;
+  display: block;
+  background: transparent;
+  border-style: solid;
+  border-radius: 1px;
+  height: 55px;
+  width: 100%;
+  max-width: 600px;
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;  font-size: 1.1rem;
+  color: $color-black-a70;
+
+  &:focus {
+    //outline: 2px solid $color-focus;
+  }
+
+  &top {
+    margin: 10px 20px 15px 0;
+  }
+}
+    .input--right-align {
+      float: right;
+    }
+
+    input[type="submit"] {
+      background: #00B43B !important;
+    }
+
+fieldset {
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  font-size: $base-font-size;
+  font-weight: $font-weight-bold;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: $color-penny-black !important;
+  color: $color-penny-black;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: yellow !important; // to change type color
+}
+
+select {
+  -webkit-appearance:none;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.field {
+  padding-top: 20px;
+  clear: both;
+  display: block;
+}
+
+.actions {
+  clear: both;
+}
+
+.label {
+  float: left;
+  width: 150px;
+}
+
+.input {
+  float: right;
+  width: calc(100% - 150px);
+}
+

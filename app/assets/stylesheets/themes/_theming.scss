@@ -1,0 +1,36 @@
+$themes: (
+    'black': (
+        theme-color: #2e2e2e,
+        text-color: #f7f7f7
+    ),
+    'blue': (
+        theme-color: #a5cc8e,
+        text-color: #333
+    ),
+    'white': (
+            theme-color: #fff,
+            text-color: $color-white
+    )
+);
+
+@each $themeName, $colors in $themes {
+    $theme-color: map-get($colors, theme-color);
+    $text-color: map-get($colors, text-color);
+
+    .theme-#{$themeName} {
+        background-color: $theme-color;
+        color: $text-color;
+    }
+
+    .u-color-#{$themeName} {
+        color: $text-color;
+    }
+
+    .u-color-#{$themeName}\:hover {
+        color: darken($text-color, 10%);
+    }
+
+    .u-bg-color-#{$themeName} {
+        background-color: $theme-color;
+    }
+}

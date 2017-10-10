@@ -1,0 +1,38 @@
+
+<div class="login-body">
+
+  <!-- Login View -->
+  <div class="login-page">
+    <div class="form">
+
+      <form class="register-form">
+        <h1 class="login-register-h1">Register</h1>
+        <input type="text" placeholder="name" id="nameInput"/>
+        <input type="password" placeholder="password" id="newPasswordInput"/>
+        <input type="text" placeholder="email address" id="emailInput"/>
+        <button type="button" class="btn btn-default" onclick="createAccount()">create account</button>
+        <p class="message">Already registered? <a onclick="changeForm()">Sign In</a></p>
+      </form>
+
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <form class="login-form">
+            <h1 class="login-register-h1">Login</h1>
+            <%= f.email_field :email, autofocus: true, placeholder: "email" %>
+            <%= f.password_field :password, autocomplete: "off", placeholder: "password" %>
+            <% if devise_mapping.rememberable? %>
+                <%= f.label :remember_me %>
+                <%= f.check_box :remember_me %>
+            <% end %>
+
+            <%= f.submit "Log in", {:class => 'btn btn-default'} %>
+
+            <p class="message">Not registered? <a onclick="changeForm()">Create an account</a></p>
+            <!--<%= render "devise/shared/links" %>-->
+          </form>
+      <% end %>
+
+    </div>
+  </div>
+
+</div> <!-- ./login-body -->
+

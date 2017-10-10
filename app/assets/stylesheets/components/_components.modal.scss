@@ -1,0 +1,35 @@
+.modal {
+    transition: all .5s ease-in-out;
+    @include fixed(0, 0, 0, 0, 1000);
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    padding: $spacing;
+}
+
+.modal--active {}
+
+.modal--hidden {
+    @include fixed(30%, 0, 0, 49%, 0);
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.modal__inner {
+    position: relative;
+    margin-top: 100px;
+    height: 80%;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.modal__close {
+    position: absolute;
+    cursor:pointer;
+    right: 0;
+    top: -2rem;
+    color: #fff;
+}

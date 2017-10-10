@@ -1,0 +1,67 @@
+
+ul, ol {
+    padding: 0 0 0 20px;
+
+    li {
+        padding: 0 0 0 10px;
+    }
+}
+
+li > {
+    ul,
+    ol {
+        margin-bottom: 0;
+    }
+}
+
+
+// Specific styles for ol
+// ----------------------------------------------------------------------------
+
+ol {
+    counter-reset:li;
+
+    > li {
+        position: relative;
+        list-style: none;
+
+        &:before {
+            content: counter(li) ".";
+            counter-increment: li;
+            position:absolute;
+            top: 0;
+            left: -20px;
+            // color: $color-text-red;
+            font-weight: 500;
+        }
+
+    }
+
+    &.red-list {
+        > li {
+            &:before {
+                color: $color-text-red;
+            }
+        }
+
+    }
+
+
+    ol {
+        margin-bottom: 0;
+
+        > li {
+
+            &:before {
+                //content: counter(li, lower-alpha) ".";
+            }
+
+            li:before {
+                //content: counter(li, lower-roman) ".";
+            }
+        }
+    }
+
+}
+
+

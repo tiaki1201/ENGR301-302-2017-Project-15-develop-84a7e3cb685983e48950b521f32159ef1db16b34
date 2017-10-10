@@ -1,0 +1,105 @@
+.no-padding {
+    padding : 0;
+}
+
+.u-pt--large {
+    padding-top: 5rem;
+}
+
+.u-pt--medium {
+    padding-top: 3.2rem;
+}
+
+.u-pt--medium--horz {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+}
+
+.u-pt--small {
+    padding-top: 2rem;
+}
+
+.u-pt--xsmall {
+    padding-top: 1rem;
+}
+
+.u-pb--large {
+    padding-bottom: 5rem;
+}
+
+.u-pb--medium {
+    padding-bottom: 3.2rem;
+}
+
+.u-pb--small {
+    padding-bottom: 2rem;
+}
+
+.u-pb--xsmall {
+    padding-bottom: 1rem;
+}
+
+// Left right padding
+
+.u-plr--xsmall {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.u-plr--small {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+.u-plr--medium {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+
+}
+
+.u-plr--large {
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+}
+
+// All round padding
+
+.u-pd--large {
+    padding: 5rem;
+}
+
+.u-pd--medium {
+    padding: 3.2rem;
+
+    @include narrow {
+        padding: 1rem;
+    }
+}
+
+
+// Vertical
+
+.vert-padding-40 {
+    padding: 0 40px;
+}
+
+.vert-padding-60 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+// Others
+
+.padding-30 {
+    padding: 30px;
+}
+
+.img--pb-md {
+    img {
+        padding-bottom: 30px;
+    }
+}

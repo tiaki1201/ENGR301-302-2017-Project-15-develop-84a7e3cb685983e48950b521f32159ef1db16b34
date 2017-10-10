@@ -1,0 +1,29 @@
+.split {
+    text-align: left;
+    list-style: none;
+    margin-left: 0;
+}
+
+    .split__right {
+        text-align: right;
+        float: right;
+        clear: left;
+    }
+
+.split--group {
+    border-top: 1px solid #E9EAEB;
+    border-bottom: 1px solid #E9EAEB;
+}
+
+.split--group {
+    margin-top: .75em;
+    margin-bottom: .75em;
+    .split {
+        margin-top: .25em;
+        margin-bottom: 0.25em;
+    }
+}
+
+.split--group + h4 {
+    margin-top: 0.5em;
+}

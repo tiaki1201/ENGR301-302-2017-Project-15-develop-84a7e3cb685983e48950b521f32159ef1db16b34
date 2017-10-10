@@ -1,0 +1,46 @@
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  transform: translateY(-800px);
+  transition: all 0.7s ease;
+  animation-duration: .5s;
+  animation-fill-mode: both;
+  will-change: transform, opacity;
+  z-index: 10;
+  opacity: 0;
+
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 0.9rem 2.6rem 200px;
+
+  a {
+    padding: 0;
+    display: block;
+  }
+
+  hr {
+    margin: 0.5em 0;
+  }
+}
+
+.mobile-menu--visible {
+  overflow: hidden;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.mobile-menu--hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.mobile-nav {
+  min-height: 100%;
+  padding-top: 70px;
+}
+
+*::-ms-backdrop, .mobile-nav {
+  // IE 11 bug
+  padding-bottom: 210px;
+}

@@ -1,0 +1,26 @@
+<div class="lg-three-quarters md-full u-plr--xsmall u-margin-center u-mt--small">
+    <div class="display-inline-block ">
+        <h3>Gareth Curtis</h3>
+        <%= link_to "Add user", new_admin_user_path, class:'btn--rect u-right' %>
+    </div>
+
+    <table class="table--users">
+        <tr class="header--row">
+            <th> <p>First name</p> </th>
+            <th> <p>Last name</p> </th>
+            <th> <p>Email</p> </th>
+            <th> <p>Active</p> </th>
+            <th> <p>Delete</p> </th>
+        </tr>
+
+        <% @users.each do |user| %>
+            <tr>
+                <td> <p><%= user.first_name %></p> </td>
+                <td> <p><%= user.last_name %></p> </td>
+                <td> <p><%= user.email %></p> </td>
+                <td> <p>Active</p> </td>
+                <td> <div class="btn--rect btn--red"><p>Delete</p></div> </td>
+            </tr>
+        <% end %>
+    </table>
+</div>

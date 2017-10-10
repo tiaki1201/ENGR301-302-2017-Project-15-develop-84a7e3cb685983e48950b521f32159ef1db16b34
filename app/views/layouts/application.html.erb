@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Todo">
+    <meta name="author" content="Adam Wareing">
+
+    <title>Skysurv</title>
+    <!-- Open layers -->
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.1.1/css/ol.css" type="text/css">
+    <script src="https://openlayers.org/en/v4.1.1/build/ol.js" type="text/javascript"></script>
+
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body style="margin: 0;">
+
+<% unless @hide_menu %>
+
+<div id="top-bar" style="background:#ffc800;"></div>
+<div class="nav" style="height: 60px; background: rgba(0,0,0,0.9)">
+
+    <!--Nav image-->
+    <div class="u-left u-hidden-narrow u-hidden-medium-only" style="height: 60px; padding: 5px;">
+        <%= image_tag 'mapping-the-future-today.png', :style => 'height: 50px;' %>
+    </div>
+
+    <!--Nav links-->
+    <div class="nav-links u-right md-two-thirds u-hidden-narrow u-text-right">
+        <a href="/">Map</a>
+        <div class="dropdown">
+          <a class="dropbtn" href="">Account</a>
+          <div class="dropdown-content">
+            <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+          </div>
+        </div>
+    </div>
+
+    <div class="menu-button">
+        ☰
+    </div>
+
+    <div class="mobile-menu mobile-menu--hidden">
+        <%= image_tag("x.svg", :alt => "close", class:'close-nav-icon') %>
+        <nav class="mobile-nav">
+            <div>
+                <a href="/">Map</a>
+            </div>
+            <div>
+              <a href="">Account</a>
+            </div>
+            <div class="sub-link">
+                <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<% end %>
+
+<%= yield %>
+
+<!--Footer-->
+<div class="footer">
+  <div class="grid u-margin-center u-pd--medium u-text-" style="overflow: auto;">
+    <div class="lg-one-half md-full narrow-full">
+      <p class="u-text-left">Sky Surv Aviation Limited - All rights reserved 2017</p>
+    </div>
+    <div class="lg-one-half md-full narrow-full">
+      <div class="u-margin-center md-text--right">
+        <a href="" class="">office@skysurv.co.nz</a>
+        <p class="u-inline-block u-plr--xsmall">  |  </p>
+        <a href="">0800 SKY 700</a>
+      </div>
+    </div>
+  </div>
+  <div class="u-text-center">
+    <%= image_tag 'footer-img.png', :style => 'margin-bottom: 100px;' %>
+  </div>
+</div>
+
+
+</body>
+</html>

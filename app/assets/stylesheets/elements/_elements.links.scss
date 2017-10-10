@@ -1,0 +1,30 @@
+// Minimal style to prevent conflicting with other links
+// and make it easy to override
+a {
+    //transition: $base-transition;
+    text-decoration: none;
+    color: $color-penny-black;
+}
+
+// Basic link, has visited states
+.link--basic {
+    &:visited {
+        color: $color-black-a50;
+
+        &:hover {
+            color: darken($color-black-a50, 50%)
+        }
+    }
+}
+
+
+// Border styles for links
+.link--border {
+    border-bottom: 1px solid;
+    text-decoration: none;
+    border-bottom-color: inherit;
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+}

@@ -1,0 +1,62 @@
+
+// Brand colors
+$color-penny-blue:          #4BCEF3;
+$color-penny-red:           #FF4F5A;
+$color-penny-black:         #27323E;
+
+// Action colors
+$color-bg-color:            #F4F4F5;
+$color-go-green:            #56C97C;
+$color-yo-yellow:           #FFB945;
+$color-white:               #fff;
+
+// Common Colors
+$color-black-a70:           rgba($color-penny-black, 0.7);
+$color-black-a50:           rgba($color-penny-black, 0.5);
+$color-black-a30:           rgba($color-penny-black, 0.3);
+$color-black-a20:           #D4D6D8;
+$color-black-a10:           #E9EAEB;
+$color-white-a70:           rgba(white, 0.7);
+$color-white-a50:           rgba(white, 0.5);
+$color-white-a30:           rgba(white, 0.3);
+
+// Roma colors
+$color-text-roma-deer-ochre:rgb(180,118,70);
+$color-text-roma-deer-beef: rgb(140,97,65);
+$color-text-roma-deer-spot: rgb(73,55,40);
+$color-text-roma-deer-spot: rgb(73,55,40);
+
+// Text colors
+$color-text-blue:           #00B7EA;
+$color-text-blue-dark:      #005A74;
+$color-text-red:            #FF0010;
+$color-text-red-dark:       #5A0006;
+$color-text-green:          #00B43B;
+$color-text-green-dark:     #006C24;
+$color-text-yellow:         #EC8500;
+$color-text-yellow-dark:    #995600;
+
+$color-text-roma-brown:     rgb(49,36,27);
+$color-text-roma-cream:     rgb(244,238,225);
+$color-text-roma-orange:    rgb(225,124,77);
+$color-text-roma-veal:      rgb(212,148,43);
+$color-text-roma-deer-brown:rgb(190,118,78);
+
+
+// Accessibilty Colors
+$color-focus:               #6cc6ee;
+$color-select:              #b3d4fc;
+$color-error:               #f77;
+
+// Sentiments
+$color-error: #c0392b;
+
+
+.roma-brown-bg {
+  background: $color-text-roma-brown;
+}
+
+.roma-brown-text {
+  color: $color-text-roma-brown;
+}
+

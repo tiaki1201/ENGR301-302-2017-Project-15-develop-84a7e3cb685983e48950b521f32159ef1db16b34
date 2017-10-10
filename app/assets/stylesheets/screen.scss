@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// Kernl SCSS Base
+// -----------------------------------------------------------------------------
+// 1. Settings - Variables for colors, typography and basic spacing
+// 2. Tools - Media queries for breakpoints, helpers and funcitons
+//
+@import 'settings/index';
+// Start here, add font sizes,  base
+@import 'tools/index';
+@import 'generic/index';
+@import 'elements/index';
+@import 'objects/index';
+@import 'components/index';
+@import 'utilities/index';
+@import 'themes/index';
+
+// -----------------------------------------------------------------------------
+// All this can be deleted - remove any example classes from html
+// -----------------------------------------------------------------------------
+
+.main-content {
+  padding-top: $spacing;
+  padding-bottom: $spacing;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    background-color: #FB263D;
+  }
+  25% {
+    background-color: #FF7382;
+  }
+  50% {
+    background-color: #FF273E;
+  }
+  75% {
+    background-color: #7F3A41;
+  }
+  100% {
+    background-color: #CC1F32;
+  }
+}
+
+body {
+  margin: 0 !important;
+}
+
+.close-nav-icon {
+  float: left;
+  display: block;
+  margin-left: -20px;
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  clear: both;
+}
+
+.md-text--right {
+  @include large {
+    text-align: right;
+  }
+}

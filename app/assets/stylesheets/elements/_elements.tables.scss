@@ -1,0 +1,50 @@
+table {
+  border-spacing: 0;
+  overflow-x:auto;
+  width: 100% ;
+  max-width: 100%;
+  display: block;
+}
+
+    tbody {
+      width: 100%;
+    }
+
+    th {
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+      padding: 18px 0 14px;
+      margin-bottom: 5px;
+    }
+
+    td {
+      padding: 0 2rem;
+      vertical-align: top;
+    }
+
+    tr.spacing-md > td {
+      padding-bottom: 1em;
+      padding-top: 1em;
+    }
+
+
+.table--users {
+  p {
+    padding-top: 12px;
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+.header--row {
+  th {
+    padding: 5px 0;
+  }
+  padding-bottom: 20px;
+}
+
+.header--row + tr {
+  td {
+   padding-top: 10px;
+  }
+}

@@ -1,0 +1,14 @@
+<div class="md-three-quarters narrow-full u-plr--xsmall u-margin-center ">
+    <div class="form form--create-user">
+        <h1 class="login-register-h1">Create user</h1>
+        <%= form_for :user, url: admin_users_path do |f| %>
+        <%= f.text_field :first_name, placeholder: 'First name' %>
+        <%= f.text_field :last_name, placeholder: 'Last name' %>
+        <%= f.email_field :email, placeholder: 'Email' %>
+        <%= f.password_field :password, placeholder: 'Password' %>
+        <%= f.check_box :admin %><p class="form-text">Administrator</p>
+        <%= f.submit %>
+        <% end %>
+        <br>
+    </div>
+</div>

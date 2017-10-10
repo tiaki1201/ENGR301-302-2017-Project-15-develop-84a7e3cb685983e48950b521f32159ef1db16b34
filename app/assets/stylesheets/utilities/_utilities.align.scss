@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------------------
+// ALIGNMENTS
+// -----------------------------------------------------------------------------
+
+
+// vertical aligns
+
+.u-align-middle {
+    vertical-align: middle !important;
+}
+
+.u-align-bottom {
+    vertical-align: bottom !important;
+}
+
+
+// text aligns
+
+.u-text-left {
+    text-align: left !important;
+}
+
+.p--pet-shop {
+   p {
+       text-align: left;
+       font-size: 20px;
+       color: #000000;
+   }
+}
+
+.u-text-right {
+    text-align: right !important;
+}
+
+.u-text-center {
+    text-align: center !important;
+}
+
+
+// margin center
+// -----------------------------------------------------------------------------
+
+.u-margin-center,
+.u-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+// floats
+// -----------------------------------------------------------------------------
+
+.u-left {
+    float: left !important;
+}
+
+.u-right {
+    float: right !important;
+}
+
+
+// clear
+// -----------------------------------------------------------------------------
+
+.u-clear {
+    clear: both !important;
+}

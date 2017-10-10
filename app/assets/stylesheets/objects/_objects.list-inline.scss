@@ -1,0 +1,26 @@
+.list-inline {
+  margin-left: 0;
+  padding: 0;
+  list-style: none;
+}
+
+  .list-inline__item {
+    display: inline-block;
+
+    & + & {
+      margin-left: $spacing-half;
+    }
+  }
+
+
+  .inline-block--centered {
+    margin: 0 auto;
+    display: inline-block;
+
+    li{
+      padding: 0;
+    }
+  }
+
+
+

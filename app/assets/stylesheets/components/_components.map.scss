@@ -1,0 +1,79 @@
+.map {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+
+$layers-x: 70px;
+$tools-x: 250px;
+$download-x: 290px;
+
+@mixin widget {
+  background: rgba(0, 0, 0, 0.9);
+  display: inline-block;
+  position: absolute;
+  z-index: 6;
+  border-radius: 10px;
+  padding: 10px;
+
+  svg {
+    width: 30px;
+    height: auto;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  svg:hover {
+    opacity: 0.5;
+  }
+}
+
+@mixin icon-widget {
+  top: 10px;
+  height: 50px;
+}
+
+.layers {
+  @include widget;
+  @include icon-widget;
+  left: $layers-x;
+}
+
+.tools {
+  @include widget;
+  @include icon-widget;
+  left: $tools-x;
+}
+
+.info {
+  @include widget;
+  bottom: 100px;
+  left: 20px;
+
+  p {
+    color: white;
+    margin: 0;
+  }
+}
+
+#pen-tool-menu, #pin-tool-menu, #color-tool-menu {
+  @include widget;
+  left: $tools-x;
+  top: 65px;
+}
+
+#layers-tool-menu {
+  @include widget;
+  left: $layers-x;
+  top: 65px;
+}
+
+.ol-zoom .ol-zoom-in, .ol-zoom-out {
+  background-color: rgba(0,0,0,0.9) !important;
+}
+
+.ol-zoom-in:hover, .ol-zoom-out:hover {
+  background-color: rgba(0,0,0,0.8) !important;
+}

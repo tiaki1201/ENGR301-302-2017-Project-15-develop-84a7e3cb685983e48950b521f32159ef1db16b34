@@ -1,0 +1,28 @@
+html {
+    -webkit-tap-highlight-color: transparent;
+    color: $color-penny-black;
+    font-family: Rainier-North, serif;
+    font-size: $base-font-size;
+    height: 100%;
+    line-height: 1.45;
+    min-height: 100%;
+
+    @include medium {
+        background-color: $color-bg-color;
+    }
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smooth: always;
+    height: 100%;
+    position: relative;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 $spacing;
+}

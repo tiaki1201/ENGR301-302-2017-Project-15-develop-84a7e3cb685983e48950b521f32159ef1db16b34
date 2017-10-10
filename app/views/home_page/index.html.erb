@@ -1,0 +1,47 @@
+<body>
+  <div id="map" class="map" style="position: absolute;">
+
+    <div id="tool-bar">
+      <div class="layers">
+        <%= inline_svg "icons/layers.svg", class: '', id: 'layers-tool', title: "Select layers" %>
+        <%= inline_svg "icons/home.svg", class: '', id: 'properties-tool', title: "View property information" %>
+        <%= inline_svg "icons/download.svg", class: '', id: 'download-tool', title: "Download map image" %>
+      </div>
+
+      <div class="tools">
+        <%= inline_svg "icons/pen.svg", class: '', id: 'pen-tool', title: "Drawing tools" %>
+        <%= inline_svg "icons/pin.svg", class: '', id: 'pin-tool', title: "Map pins" %>
+      </div>
+    </div>
+
+    <div id="tool-menus">
+      <div id="pen-tool-menu">
+        <%= inline_svg "icons/pen.svg", class: 'fill-red' %>
+        <%= inline_svg "icons/pen.svg", class: 'fill-green' %>
+        <%= inline_svg "icons/pen.svg", class: 'fill-blue' %>
+        <%= inline_svg "icons/pen.svg", class: 'fill-white' %>
+      </div>
+      <div id="layers-tool-menu">
+        <%= inline_svg "icons/layers.svg", class: 'fill-red', id: "rgb_layer" %>
+        <%= inline_svg "icons/layers.svg", class: 'fill-green', id: "nir_layer" %>
+        <%= inline_svg "icons/layers.svg", class: 'fill-blue', id: "multispec_layer" %>
+        <%= inline_svg "icons/layers.svg", class: 'fill-white', id: "therm_layer" %>
+      </div>
+      <div id="pin-tool-menu">
+        <%= inline_svg "icons/pin.svg", class: 'fill-red' %>
+        <%= inline_svg "icons/pin.svg", class: 'fill-green' %>
+        <%= inline_svg "icons/pin.svg", class: 'fill-blue' %>
+        <%= inline_svg "icons/pin.svg", class: 'fill-white' %>
+      </div>
+      <div id="color-tool-menu">
+        <%= image_tag("icon-color-wheel.png", :alt => "colour wheel") %>
+        <%= image_tag("icon-color-wheel.png", :alt => "colour wheel") %>
+        <%= image_tag("icon-color-wheel.png", :alt => "colour wheel") %>
+      </div>
+    </div>
+
+    <div class="info">
+      <p>Information</p>
+    </div>
+  </div>
+</body>

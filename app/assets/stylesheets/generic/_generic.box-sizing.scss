@@ -1,0 +1,15 @@
+/**
+ * Apply a natural box layout model to all elements. This is a recommended
+ * practice from Paul Irish. For more info see
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * Chris Coyer explains the updated code well
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}

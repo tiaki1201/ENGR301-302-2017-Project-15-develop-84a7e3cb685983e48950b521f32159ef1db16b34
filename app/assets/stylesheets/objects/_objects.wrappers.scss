@@ -1,0 +1,72 @@
+
+
+
+// -----------------------------------------------------------------------------
+// Wrappers for centering content
+// -----------------------------------------------------------------------------
+//
+//
+//
+//
+//
+//
+
+
+
+p {
+    margin-top: 0;
+}
+
+
+// Base
+// ----------------------------------------------------------------------------
+.wrapper {
+    @include clearfix;
+    margin-right: auto;
+    margin-left:  auto;
+}
+
+// Modifiers
+// ----------------------------------------------------------------------------
+
+.wrapper--xlarge {
+    max-width: 1750px;
+}
+
+.wrapper--large {
+    max-width: 1280px;
+}
+
+.wrapper--medium {
+    max-width: 1140px;
+}
+
+.wrapper--small {
+    max-width: 800px;
+}
+
+.wrapper--plr--small {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.wrapper-plr--medium {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+
+.wrapper--ptb--small {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.wrapper--ptb--medium {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.wrapper--ptb--large {
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
